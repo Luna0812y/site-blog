@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body, footer, h1 {
+    margin: 0;
+}
+
+#leiaute-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+main, aside, nav {
+    padding: 1rem;
+}
+
+/* Larguras para desktop */
+main {
+    width: 55%;
+    margin: auto;
+}
+
+aside {
+    flex: 1;
+    min-height: 150px; 
+}
+
+nav {
+    width: 20%;
+    margin-left: 2rem;
+    height: 500px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    main, aside, nav {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+
+    #leiaute-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #titulo-principal {
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(235, 8, 8), rgb(162, 133, 243));
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+.bordas {
+    border-top: .063rem dotted gray;
+    border-right: .063rem solid red;
+    border-bottom: .063rem dashed green;
+    border-left: .063rem inset blue;
+}
+
+.margens {
+    margin: 1.98rem;
+    border: .063rem solid white;
+    padding-left: 1.98rem;
+    padding-top: .63rem;
+    padding-bottom: 1.26rem;
+}
+
+article, nav, aside {
+    background-color: lightgray;
+    color: black;
+    padding: 1rem;
+    margin-top: 2.0rem;
+    margin-bottom: 1.0rem;
+    border-radius: 1%;
+    box-shadow: .256rem .256rem .256rem .126rem rgba(0, 0, 0, 0.2);
+}
+
+.comprimento {
+    border: .063rem solid gray;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.autor-data {
+    text-align: right;
+    font-style: italic;
+    color: rgb(117, 108, 108)
+}
+
+.entre-linhas {
+    line-height: 2.0;
+}
+
+.entre-letras {
+    letter-spacing: 0.3rem;
+}
+
+#titulo-principal {
+    text-align: center;
+    background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(30, 1, 55));
+    font-size: 5rem;
+    letter-spacing: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 2.5rem;
+    border-bottom: .063rem solid black;
+}
+
+.negrito {
+    font-weight: bolder;
+}
+
+.italico {
+    font-style: italic;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+.vermelho {
+    color: #ff0000;
+}
+
+.verde {
+    color: #00ff00;
+}
+
+.azul {
+    color: #0000ff;
+}
+
+.cinza-claro {
+    color: #aaa;
+}
+
+.cinza-escuro {
+    color: #444;
+}
+
+.times {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.arial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.verdana {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.playwrite {
+    font-family: "Playwrite MX Guides", cursive;
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    font-size: 1.5rem;
+    background-color: black;
+    padding: .5rem;
+    background-image: linear-gradient(to left, rgb(30, 1, 55), rgb(0, 0, 0));
+}
+
+.lista-ordenada {
+    list-style-type: lower-roman;
+    margin-left: 2rem;
+}
+
+.lista-nao-ordenada {
+    list-style-type: square;
+    margin-left: 2rem;
+}
+
+.lista-com-imagens {
+    list-style-image: url('imagens/seta1.png');
+    margin-left: 2rem;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    color: rgb(125, 123, 123);
+    text-decoration: underline;
+}
+
+.lista-de-links li {
+    line-height: 2;
+}
+
+li a img {
+    width: 3rem;
+    height: 3rem;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.63rem;
+}
+
+.tabela-1 td {
+    background-color: #fff;
+    color: #000;
+    padding: 0.63rem;
+}
+
+.linha-cinza {
+    background-color: #b1b0b0;
+    color: black;
+}
+
+.linha-branca {
+    background-color: #fff;
+    color: black;
+}
+
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.footer-logo img {
+    max-width: 100%;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex: 3;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-column h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-column form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-column form button:hover {
+    background-color: #45a049;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Ícones */
+.icon-facebook, .icon-twitter, .icon-instagram {
+    margin-right: 10px;
+}
+
